@@ -24,17 +24,17 @@
 
     <!-- BARRA DE NAVEGACIÓN --><header class="bg-gray-900 shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Logo / Nombre de la Tienda (Actualizado sin icono) --><a href="#" onclick="mostrarPagina('page-home')" class="text-2xl md:text-3xl text-white flex items-center">
+            <!-- Logo / Nombre de la Tienda (Actualizado sin icono) --><a href="#" onclick="navegarA('page-home')" class="text-2xl md:text-3xl text-white flex items-center">
                 <!-- Icono eliminado para un look más limpio y profesional -->
                 <span class="font-semibold">Bicicletería</span>
                 <span class="font-bold text-yellow-500 ml-2">El Pedal</span>
             </a>
             
             <!-- Menú de Navegación (Actualizado) --><div class="hidden md:flex space-x-6">
-                <a href="#" onclick="mostrarPagina('page-home')" class="text-gray-300 hover:text-yellow-500 transition duration-300">Inicio</a>
-                <a href="#" onclick="mostrarPagina('page-bicicletas')" class="text-gray-300 hover:text-yellow-500 transition duration-300">Bicicletas</a>
-                <a href="#" onclick="mostrarPagina('page-repuestos')" class="text-gray-300 hover:text-yellow-500 transition duration-300">Repuestos</a>
-                <a href="#" onclick="mostrarPagina('page-servicios')" class="text-gray-300 hover:text-yellow-500 transition duration-300">Servicios</a>
+                <a href="#" onclick="navegarA('page-home')" class="text-gray-300 hover:text-yellow-500 transition duration-300">Inicio</a>
+                <a href="#" onclick="navegarA('page-bicicletas')" class="text-gray-300 hover:text-yellow-500 transition duration-300">Bicicletas</a>
+                <a href="#" onclick="navegarA('page-repuestos')" class="text-gray-300 hover:text-yellow-500 transition duration-300">Repuestos</a>
+                <a href="#" onclick="navegarA('page-servicios')" class="text-gray-300 hover:text-yellow-500 transition duration-300">Servicios</a>
                 <a href="#contacto" class="text-gray-300 hover:text-yellow-500 transition duration-300">Contacto</a>
             </div>
             
@@ -46,10 +46,10 @@
         </nav>
         
         <!-- Menú Móvil (oculto por defecto) --><div id="mobile-menu" class="md:hidden hidden bg-gray-900 border-t border-gray-700">
-            <a href="#" onclick="mostrarPagina('page-home'); cerrarMenuMovil();" class="block py-2 px-6 text-gray-300 hover:bg-gray-700 hover:text-yellow-500">Inicio</a>
-            <a href="#" onclick="mostrarPagina('page-bicicletas'); cerrarMenuMovil();" class="block py-2 px-6 text-gray-300 hover:bg-gray-700 hover:text-yellow-500">Bicicletas</a>
-            <a href="#" onclick="mostrarPagina('page-repuestos'); cerrarMenuMovil();" class="block py-2 px-6 text-gray-300 hover:bg-gray-700 hover:text-yellow-500">Repuestos</a>
-            <a href="#" onclick="mostrarPagina('page-servicios'); cerrarMenuMovil();" class="block py-2 px-6 text-gray-300 hover:bg-gray-700 hover:text-yellow-500">Servicios</a>
+            <a href="#" onclick="navegarA('page-home'); cerrarMenuMovil();" class="block py-2 px-6 text-gray-300 hover:bg-gray-700 hover:text-yellow-500">Inicio</a>
+            <a href="#" onclick="navegarA('page-bicicletas'); cerrarMenuMovil();" class="block py-2 px-6 text-gray-300 hover:bg-gray-700 hover:text-yellow-500">Bicicletas</a>
+            <a href="#" onclick="navegarA('page-repuestos'); cerrarMenuMovil();" class="block py-2 px-6 text-gray-300 hover:bg-gray-700 hover:text-yellow-500">Repuestos</a>
+            <a href="#" onclick="navegarA('page-servicios'); cerrarMenuMovil();" class="block py-2 px-6 text-gray-300 hover:bg-gray-700 hover:text-yellow-500">Servicios</a>
             <a href="#contacto" onclick="cerrarMenuMovil();" class="block py-2 px-6 text-gray-300 hover:bg-gray-700 hover:text-yellow-500">Contacto</a>
         </div>
     </header>
@@ -65,7 +65,7 @@
                     <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-10">
                         Encuentra las mejores bicicletas, repuestos de calidad y el servicio de mantenimiento que tu bici merece.
                     </p>
-                    <a href="#" onclick="mostrarPagina('page-bicicletas')" class="bg-yellow-400 text-black font-bold py-3 px-8 rounded-lg text-lg hover:bg-yellow-500 transition duration-300 shadow-lg transform hover:scale-105">
+                    <a href="#" onclick="navegarA('page-bicicletas')" class="bg-yellow-400 text-black font-bold py-3 px-8 rounded-lg text-lg hover:bg-yellow-500 transition duration-300 shadow-lg transform hover:scale-105">
                         Ver Catálogo
                     </a>
                 </div>
@@ -86,7 +86,7 @@
                             <p class="text-gray-700 mb-6 flex-grow">
                                 Ofrecemos una amplia gama de bicicletas nuevas y usadas: montañeras, de ruta, urbanas y para niños.
                             </p>
-                            <button onclick="mostrarPagina('page-bicicletas')" class="w-full bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg hover:bg-black transition duration-300">
+                            <button onclick="navegarA('page-bicicletas')" class="w-full bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg hover:bg-black transition duration-300">
                                 Ver Catálogo de Bicicletas
                             </button>
                         </div>
@@ -96,7 +96,7 @@
                             <p class="text-gray-700 mb-6 flex-grow">
                                 Próximamente... Estamos actualizando nuestro inventario de repuestos y accesorios.
                             </p>
-                            <button onclick="mostrarPagina('page-repuestos')" class="w-full bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg hover:bg-black transition duration-300">
+                            <button onclick="navegarA('page-repuestos')" class="w-full bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg hover:bg-black transition duration-300">
                                 Ver Repuestos
                             </button>
                         </div>
@@ -107,7 +107,7 @@
                             <p class="text-gray-900 mb-6 flex-grow">
                                 Deja tu bicicleta en manos expertas. Ofrecemos mantenimiento general y reparaciones especializadas. <strong>¡El diagnóstico es gratuito!</strong>
                             </p>
-                            <button onclick="mostrarPagina('page-servicios')" class="w-full bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg hover:bg-black transition duration-300">
+                            <button onclick="navegarA('page-servicios')" class="w-full bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg hover:bg-black transition duration-300">
                                 Ver Servicios de Taller
                             </button>
                         </div>
@@ -120,7 +120,7 @@
             <div class="container mx-auto px-6 lg:px-8">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">Catálogo de Bicicletas</h2>
                 <div class="text-center mb-12">
-                    <a href="#" onclick="mostrarPagina('page-home')" class="text-gray-700 hover:text-black font-semibold">&larr; Volver al inicio</a>
+                    <a href="#" onclick="navegarA('page-home')" class="text-gray-700 hover:text-black font-semibold">&larr; Volver al inicio</a>
                 </div>
                 
                 <!-- (NUEVO) Grilla de Productos: Bicicletas (se carga dinámicamente) --><div id="grilla-bicicletas" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -135,7 +135,7 @@
                     Actualmente estamos actualizando nuestro inventario de repuestos. ¡Vuelve pronto!
                 </p>
                 <div class="text-center mb-12">
-                    <a href="#" onclick="mostrarPagina('page-home')" class="text-gray-700 hover:text-black font-semibold">&larr; Volver al inicio</a>
+                    <a href="#" onclick="navegarA('page-home')" class="text-gray-700 hover:text-black font-semibold">&larr; Volver al inicio</a>
                 </div>
                 
                 <!-- Grilla de Repuestos (vacía) --><div id="grilla-repuestos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -152,7 +152,7 @@
                 <p class="text-lg text-center text-gray-700 mt-2 mb-10 max-w-xl mx-auto">¿No estás seguro de qué necesita tu bici? ¡No te preocupes! <strong>El diagnóstico es totalmente gratuito.</strong></p>
                 
                 <div class="text-center mb-16">
-                    <a href="#" onclick="mostrarPagina('page-home')" class="text-gray-700 hover:text-black font-semibold">&larr; Volver al inicio</a>
+                    <a href="#" onclick="navegarA('page-home')" class="text-gray-700 hover:text-black font-semibold">&larr; Volver al inicio</a>
                 </div>
                 
                 <!-- Contenido de Servicios --><div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -304,8 +304,7 @@
 
         // Lógica de Navegación (SPA - Single Page Application)
         const paginas = document.querySelectorAll('.page');
-        const enlaceHome = document.querySelector('a[onclick="mostrarPagina(\'page-home\')"]');
-
+        
         function mostrarPagina(idPagina) {
             // Ocultar todas las páginas
             paginas.forEach(page => {
@@ -407,8 +406,65 @@
         // Actualizar el año actual en el footer
         document.getElementById('currentYear').textContent = new Date().getFullYear();
         
+        // --- (NUEVO CÓDIGO PARA HISTORIAL Y BOTÓN "ATRÁS") ---
+
+        /**
+         * Nueva función para manejar la navegación.
+         * Muestra la página y actualiza el historial del navegador.
+         */
+        function navegarA(idPagina) {
+            // 1. Mostrar la página (usando la función que ya existe)
+            mostrarPagina(idPagina);
+            
+            // 2. Crear un "hash" limpio para la URL (ej: "home" o "bicicletas")
+            const hash = idPagina.replace('page-', '');
+            
+            // 3. Añadir esto al historial del navegador
+            // Solo lo añadimos si el estado actual no es ya esta página
+            if (history.state === null || history.state.page !== idPagina) {
+                history.pushState({ page: idPagina }, '', `#${hash}`);
+            }
+        }
+
+        /**
+         * Escuchar el evento 'popstate' 
+         * (cuando el usuario presiona "atrás" o "adelante" en el navegador/celular)
+         */
+        window.onpopstate = function(event) {
+            if (event.state && event.state.page) {
+                // Si el estado existe (ej: volvimos a #bicicletas), mostrar esa página
+                mostrarPagina(event.state.page);
+            } else {
+                // Si el estado es nulo (volvimos al inicio, antes de cualquier #hash), mostrar la home
+                mostrarPagina('page-home');
+            }
+        };
+
+        // --- (FIN DE CÓDIGO NUEVO) ---
+
         // Cargar todo el inventario cuando la página esté lista
-        document.addEventListener('DOMContentLoaded', cargarInventario);
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Cargar inventario
+            cargarInventario();
+            
+            // 2. (NUEVO) Manejar la carga inicial de la página
+            let paginaInicial = 'page-home';
+            // Comprobar si la URL ya tiene un hash (ej: #bicicletas)
+            if (window.location.hash) {
+                const hash = window.location.hash.substring(1); // quita el #
+                // Convertir el hash de la URL (ej: "bicicletas") al ID de la página (ej: "page-bicicletas")
+                const idPaginaDesdeHash = `page-${hash}`;
+                // Validar que la página exista antes de mostrarla
+                if (document.getElementById(idPaginaDesdeHash)) {
+                    paginaInicial = idPaginaDesdeHash;
+                }
+            }
+            
+            // 3. (NUEVO) Mostrar la página inicial y establecer el estado del historial
+            mostrarPagina(paginaInicial);
+            // Usamos replaceState para establecer el estado inicial sin crear una entrada "extra" en el historial
+            history.replaceState({ page: paginaInicial }, '', `#${paginaInicial.replace('page-', '')}`);
+        });
         
     </script>
 
