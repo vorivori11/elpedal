@@ -24,9 +24,15 @@
 
     <!-- BARRA DE NAVEGACIÓN --><header class="bg-gray-900 shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Logo / Nombre de la Tienda (Actualizado para usar colores del logo) --><a href="#" onclick="mostrarPagina('page-home')" class="text-3xl font-bold text-white flex items-center">
-                <!-- ================== LOGO AÑADIDO (TAMAÑO CORREGIDO) ================== --><!-- Asegúrate de tener tu logo en la carpeta 'imagenes/logo.png' --><img src="imagenes/logo.png" alt="Logo El Pedal" class="h-20 w-auto mr-3">
-                <!-- =================================================== -->Bicicletería <span class="text-yellow-500">El Pedal</span>
+            <!-- Logo / Nombre de la Tienda (Actualizado para usar colores del logo) --><a href="#" onclick="mostrarPagina('page-home')" class="text-2xl md:text-3xl font-bold text-white flex items-center">
+                <!-- ================== ICONO DE BICICLETA AÑADIDO ================== -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mr-2 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18.75c-2.071 0-3.75-1.679-3.75-3.75S3.929 11.25 6 11.25s3.75 1.679 3.75 3.75S8.071 18.75 6 18.75zM18 18.75c-2.071 0-3.75-1.679-3.75-3.75s1.679-3.75 3.75-3.75 3.75 1.679 3.75 3.75S20.071 18.75 18 18.75z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 15H14.25M6 11.25L9.75 6.375M18 11.25L14.25 6.375M9.75 6.375H14.25M12 11.25V6.375" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 15l2.438 2.438M9.75 15L7.312 17.438" />
+                </svg>
+                <!-- =================================================== -->
+                Bicicletería <span class="text-yellow-500">El Pedal</span>
             </a>
             
             <!-- Menú de Navegación (Actualizado) --><div class="hidden md:flex space-x-6">
@@ -161,9 +167,18 @@
                         <div class="p-8 flex flex-col flex-grow">
                             <span class="text-sm font-semibold text-yellow-500 uppercase mb-2">Servicio Completo</span>
                             <h3 class="text-2xl font-bold text-gray-900 mb-3">Servis Full</h3>
-                            <p class="text-gray-700 mb-4 flex-grow">
-                                Se desarma maza delantera y trasera, caja de dirección, suspensión (básica) y transmisión. Lavado completo, secado, engrasado y armado.
-                            </p>
+                            
+                            <!-- Descripción de Servis Full actualizada a lista con emojis -->
+                            <div class="text-gray-700 mb-4 flex-grow">
+                                <ul class="list-disc list-inside text-left space-y-2">
+                                    <li>🔧 Desarme de maza delantera y trasera.</li>
+                                    <li>🔩 Desarme de caja de dirección y transmisión.</li>
+                                    <li>⚙️ Desarme de suspensión (básica).</li>
+                                    <li>🧼 Lavado completo, secado y engrasado.</li>
+                                    <li>🛠️ Armado y regulación general.</li>
+                                </ul>
+                            </div>
+                            
                             <p class="text-3xl font-bold text-gray-900 mb-6">Gs. 180.000</p>
                             <button onclick="consultarProducto('Servis Full de Gs. 180.000')" class="w-full bg-yellow-400 text-black font-semibold py-3 px-6 rounded-lg hover:bg-yellow-500 transition duration-300">
                                 Agendar Servis Full
@@ -241,7 +256,7 @@
                     </ul>
                 `,
                 precio: 330000, 
-                imagen: "imagenes/bicis/caloirosa.png" 
+                imagen: "imagenes/bicis/caloirosa.jpeg" 
             },
             {
                 nombre: "🚵 Bicicleta Twitter Aro 29 (Usada)",
@@ -258,7 +273,7 @@
                     </ul>
                 `,
                 precio: 2500000, 
-                imagen: "imagenes/bicis/twiter.png"
+                imagen: "imagenes/bicis/twiter.jpg"
             }
             // Puedes añadir más bicicletas aquí siguiendo el formato:
             // {
